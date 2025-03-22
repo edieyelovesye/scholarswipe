@@ -1,62 +1,8 @@
 'use client'
 
-import { useState, useEffect } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
 
 export default function ComingSoon() {
-  const [timeLeft, setTimeLeft] = useState(() => {
-    const targetDate = new Date('April 5, 2024');
-    const currentDate = new Date();
-    
-    // Calculate the difference in milliseconds
-    const difference = targetDate.getTime() - currentDate.getTime();
-    
-    // Convert to days, hours, minutes, seconds
-    const days = Math.floor(difference / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((difference % (1000 * 60)) / 1000);
-    
-    return {
-      days: Math.max(0, days),
-      hours: Math.max(0, hours),
-      minutes: Math.max(0, minutes),
-      seconds: Math.max(0, seconds)
-    };
-  })
-
-  const [email, setEmail] = useState('')
-  const [isSubscribed, setIsSubscribed] = useState(false)
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setTimeLeft(prev => {
-        if (prev.seconds > 0) {
-          return { ...prev, seconds: prev.seconds - 1 }
-        } else if (prev.minutes > 0) {
-          return { ...prev, minutes: prev.minutes - 1, seconds: 59 }
-        } else if (prev.hours > 0) {
-          return { ...prev, hours: prev.hours - 1, minutes: 59, seconds: 59 }
-        } else if (prev.days > 0) {
-          return { ...prev, days: prev.days - 1, hours: 23, minutes: 59, seconds: 59 }
-        }
-        return prev
-      })
-    }, 1000)
-
-    return () => clearInterval(timer)
-  }, [])
-
-  const handleSubscribe = (e: React.FormEvent) => {
-    e.preventDefault()
-    if (email) {
-      setIsSubscribed(true)
-      setEmail('')
-    }
-  }
-
   return (
     <div className="min-h-screen bg-[#191919] relative overflow-hidden">
       {/* Solid background - removed gradient */}
@@ -80,46 +26,6 @@ export default function ComingSoon() {
             <p className="mx-auto mt-6 max-w-2xl text-xl text-white leading-relaxed">
               We're crafting an innovative AI-powered scholarship platform that will revolutionize how students discover and secure their educational funding opportunities.
             </p>
-          </div>
-
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-4 max-w-3xl mx-auto">
-            {Object.entries(timeLeft).map(([unit, value]) => (
-              <div key={unit} className="transform hover:scale-105 transition-transform duration-300">
-                <div className="rounded-2xl bg-white/5 backdrop-blur-lg p-6 border border-white/10 shadow-xl hover:bg-white/10 transition-all duration-300">
-                  <div className="text-4xl font-bold text-white">
-                    {value.toString().padStart(2, '0')}
-                  </div>
-                  <div className="text-sm font-medium text-white uppercase tracking-wider mt-2">{unit}</div>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          <div className="mt-16 max-w-md mx-auto w-full">
-            {!isSubscribed ? (
-              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4">
-                <Input
-                  type="email"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="flex-auto rounded-lg border-white/10 bg-white/5 px-4 py-3 text-white placeholder-gray-400 backdrop-blur-lg focus:border-purple-500 focus:ring-purple-500 transition-all duration-300"
-                  required
-                />
-                <Button 
-                  type="submit"
-                  className="bg-black text-white hover:bg-gray-800 rounded-lg px-8 py-3 font-medium transition-all duration-300 transform hover:scale-105 shadow-lg"
-                >
-                  Notify Me
-                </Button>
-              </form>
-            ) : (
-              <div className="rounded-2xl bg-green-500/20 p-6 backdrop-blur-lg border border-green-500/20">
-                <p className="text-lg font-medium text-green-400">
-                  Thanks for subscribing! We'll keep you updated on our progress.
-                </p>
-              </div>
-            )}
           </div>
 
           <div className="mt-12">
