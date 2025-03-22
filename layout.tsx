@@ -7,7 +7,14 @@ import { GoogleAnalytics } from "@/components/google-analytics"
 
 const inter = Inter({ subsets: ["latin"] })
 
-// Keep existing metadata configuration
+export const metadata: Metadata = {
+  metadataBase: new URL('https://scholarswipe.com'),
+  title: 'ScholarSwipe',
+  description: 'Arin pt2 website',
+  verification: {
+    google: 'NvuVYOUUQ0G6f2wfsb7PBil1nOp7EOBreeWgdUzsh-E'
+  }
+}
 
 export default function RootLayout({
   children,
@@ -16,9 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <meta name="google-site-verification" content="NvuVYOUUQ0G6f2wfsb7PBil1nOp7EOBreeWgdUzsh-E" />
-      </head>
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
