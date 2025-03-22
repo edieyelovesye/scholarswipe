@@ -11,8 +11,12 @@ export default function ComingSoon() {
       {/* Glass morphism overlay */}
       <div className="absolute inset-0 backdrop-blur-[100px] mix-blend-overlay opacity-20"></div>
       
-      {/* Mesh pattern */}
-      <div className="absolute inset-0 bg-[radial-gradient(#ffffff33_1px,transparent_1px)] [background-size:16px_16px] opacity-10"></div>
+      {/* Curved line patterns */}
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute inset-0 bg-[linear-gradient(45deg,#ffffff10_1px,transparent_1px)] [background-size:32px_32px] [transform:skew(-12deg)] blur-[0.5px]"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(-45deg,#ffffff10_1px,transparent_1px)] [background-size:32px_32px] [transform:skew(12deg)] blur-[0.5px]"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(#ffffff15_1px,transparent_1px)] [background-size:20px_20px]"></div>
+      </div>
 
       <div className="relative z-10 mx-auto max-w-7xl py-16 px-4 sm:py-24 sm:px-6 lg:px-8">
         <div className="text-center space-y-8">
