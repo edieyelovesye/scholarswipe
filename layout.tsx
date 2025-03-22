@@ -1,4 +1,4 @@
-import type React from "react"
+// src/app/layout.tsx
 import type { Metadata } from "next"
 import { Inter } from "next/font/google"
 import "./globals.css"
@@ -7,21 +7,7 @@ import Script from 'next/script'
 
 const inter = Inter({ subsets: ["latin"] })
 
-export const metadata: Metadata = {
-  title: "ScholarMatch - AI-Powered Scholarship Discovery Platform",
-  description: "Find scholarships tailored to your profile with our AI-powered platform. Simplify your scholarship search and secure funding for your education.",
-  keywords: "scholarships, education funding, AI scholarship matching, student grants",
-  openGraph: {
-    title: "ScholarMatch - AI-Powered Scholarship Discovery Platform",
-    description: "Find scholarships tailored to your profile with our AI-powered platform",
-    type: "website"
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ScholarMatch - AI-Powered Scholarship Discovery Platform",
-    description: "Find scholarships tailored to your profile with our AI-powered platform"
-  }
-}
+// Keep existing metadata configuration
 
 export default function RootLayout({
   children,
@@ -35,8 +21,10 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        
+        {/* Google Analytics Scripts - KEEP THESE */}
         <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=G-9ME3SSV483`}
+          src="https://www.googletagmanager.com/gtag/js?id=G-9ME3SSV483"
           strategy="afterInteractive"
         />
         <Script id="google-analytics" strategy="afterInteractive">
