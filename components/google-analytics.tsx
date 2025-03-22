@@ -2,7 +2,7 @@
 
 import Script from 'next/script';
 
-export function GoogleAnalytics() {
+export default function GoogleAnalytics() {
   return (
     <>
       <Script
