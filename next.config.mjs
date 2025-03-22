@@ -22,6 +22,22 @@ const nextConfig = {
     parallelServerBuildTraces: true,
     parallelServerCompiles: true,
   },
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
+  },
+  webpack: (config, { isServer }) => {
+    if (!isServer) {
+      config.resolve.fallback = {
+        ...config.resolve.fallback,
+        fs: false,
+      };
+      config.externals = {
+        ...config.externals,
+        'google-analytics': 'window.ga',
+      };
+    }
+    return config;
+  },
 }
 
 mergeConfig(nextConfig, userConfig)
