@@ -69,8 +69,13 @@ export function Footer() {
             </div>
           </div>
           <div>
-            <h3 className="text-xl font-bold text-white mb-6">Product</h3>
+            <h3 className="text-xl font-bold text-white mb-6">Scholarship Tools</h3>
             <ul className="space-y-4 text-base">
+              <li>
+                <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
+                  Product
+                </Link>
+              </li>
               <li>
                 <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
                   Features
@@ -83,7 +88,17 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
-                  Support
+                  Success Stories
+                </Link>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h3 className="text-xl font-bold text-white mb-6">Help & Support</h3>
+            <ul className="space-y-4 text-base">
+              <li>
+                <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
+                  Support Center
                 </Link>
               </li>
               <li>
@@ -91,14 +106,24 @@ export function Footer() {
                   FAQ
                 </Link>
               </li>
+              <li>
+                <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
+                  Scholarship Tips
+                </Link>
+              </li>
+              <li>
+                <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
+                  Community Forum
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white">Company</h3>
-            <ul className="mt-4 space-y-2 text-sm">
+            <h3 className="text-xl font-bold text-white mb-6">About Us</h3>
+            <ul className="space-y-4 text-base">
               <li>
                 <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
-                  About
+                  Our Mission
                 </Link>
               </li>
               <li>
@@ -113,7 +138,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>

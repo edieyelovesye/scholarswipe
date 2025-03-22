@@ -10,10 +10,10 @@ export function PricingSection() {
           <div className="space-y-2 max-w-3xl">
             <div className="inline-block rounded-full bg-blue-100 px-3 py-1 text-sm text-blue-600">Pricing</div>
             <h2 className="text-3xl font-bold tracking-tighter text-gray-900 md:text-4xl">
-              Simple, Transparent Pricing
+              Find Your Perfect Plan
             </h2>
             <p className="mx-auto max-w-[700px] text-xl text-gray-600">
-              Choose the plan that's right for you and get started with your project today.
+              Choose the plan that's right for you and start finding scholarships today
             </p>
           </div>
         </div>
@@ -21,7 +21,7 @@ export function PricingSection() {
           <Card className="bg-white border-gray-200 text-gray-900 shadow-lg">
             <CardHeader>
               <CardTitle className="text-2xl">Free</CardTitle>
-              <CardDescription className="text-gray-600">For individuals and small projects</CardDescription>
+              <CardDescription className="text-gray-600">Ideal for students starting their scholarship journey.</CardDescription>
               <div className="mt-4 flex items-baseline text-5xl font-bold">
                 $0<span className="ml-1 text-lg font-medium text-gray-500">/month</span>
               </div>
@@ -30,15 +30,15 @@ export function PricingSection() {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-yellow-500" />
-                  <span className="text-gray-700">3 Projects</span>
+                  <span className="text-gray-700">Limited scholarship matches</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-yellow-500" />
-                  <span className="text-gray-700">5GB Storage</span>
+                  <span className="text-gray-700">Basic filtering options</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-yellow-500" />
-                  <span className="text-gray-700">Basic Analytics</span>
+                  <span className="text-gray-700">Access to general scholarship tips</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-yellow-500" />
@@ -56,24 +56,28 @@ export function PricingSection() {
             </div>
             <CardHeader>
               <CardTitle className="text-2xl">Premium</CardTitle>
-              <CardDescription className="text-gray-600">For professionals and businesses</CardDescription>
+              <CardDescription className="text-gray-600">Designed for students committed to maximizing their scholarship success.</CardDescription>
               <div className="mt-4 flex items-baseline text-5xl font-bold">
-                $29<span className="ml-1 text-lg font-medium text-gray-500">/month</span>
+                $15<span className="ml-1 text-lg font-medium text-gray-500">/month</span>
               </div>
             </CardHeader>
             <CardContent>
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">Unlimited Projects</span>
+                  <span className="text-gray-700">Unlimited scholarship matches</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">100GB Storage</span>
+                  <span className="text-gray-700">Advanced AI-powered recommendations</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">Advanced Analytics</span>
+                  <span className="text-gray-700">Personalized success probability score</span>
+                </li>
+                <li className="flex items-center">
+                  <Check className="mr-2 h-5 w-5 text-blue-500" />
+                  <span className="text-gray-700">Save unlimited scholarships</span>
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-blue-500" />
@@ -81,11 +85,7 @@ export function PricingSection() {
                 </li>
                 <li className="flex items-center">
                   <Check className="mr-2 h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">API Access</span>
-                </li>
-                <li className="flex items-center">
-                  <Check className="mr-2 h-5 w-5 text-blue-500" />
-                  <span className="text-gray-700">Custom Integrations</span>
+                  <span className="text-gray-700">Exclusive scholarship insights</span>
                 </li>
               </ul>
             </CardContent>
