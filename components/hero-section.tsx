@@ -1,6 +1,7 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
+import Link from "next/link"
 
 export function HeroSection() {
   const [videoModalOpen, setVideoModalOpen] = useState(false)
@@ -20,7 +21,7 @@ export function HeroSection() {
             </h1>
             <p className="mx-auto max-w-[700px] text-xl text-gray-600">
             Our AI-powered platform simplifies your scholarship search, matching you with opportunities that fit your unique profile. 
-            tart your journey towards funding your education today!
+            Start your journey towards funding your education today!
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-3">
