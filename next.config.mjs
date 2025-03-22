@@ -31,9 +31,12 @@ const nextConfig = {
         ...config.resolve.fallback,
         fs: false,
       };
-      config.externals = {
-        ...config.externals,
-        'google-analytics': 'window.ga',
+      config.resolve = {
+        ...config.resolve,
+        alias: {
+          ...config.resolve.alias,
+          '@': './',
+        },
       };
     }
     return config;
