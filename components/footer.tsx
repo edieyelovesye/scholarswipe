@@ -5,6 +5,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 py-16">
       <div className="container px-4 md:px-6 mx-auto max-w-7xl">
+        <p className="text-center text-white/90 text-sm mb-4">Made with ❤️ by <Link href="https://www.instagram.com/29faded" className="hover:text-yellow-400 transition-colors duration-200">@29faded</Link></p>
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4 lg:grid-cols-5">
           <div className="col-span-2 lg:col-span-2">
             <Link href="/" className="flex items-center space-x-2 group transition-transform duration-200 hover:scale-105">
@@ -39,7 +40,7 @@ export function Footer() {
                   />
                 </svg>
               </div>
-              <span className="font-bold text-xl text-white group-hover:text-yellow-400 transition-colors duration-200">Cruip</span>
+              <span className="font-bold text-xl text-white group-hover:text-yellow-400 transition-colors duration-200">ScholarSwipe</span>
             </Link>
             <p className="mt-6 text-base text-white/90 max-w-xs leading-relaxed">
             Our AI-powered platform simplifies your scholarship search, matching you with opportunities that fit your unique profile. Start your journey towards funding your education today!
@@ -144,7 +145,7 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-16 border-t border-blue-500/30 pt-8 text-center text-sm text-white/90">
-          <p>© {new Date().getFullYear()} Cruip. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} ScholarSwipe. All rights reserved.</p>
         </div>
       </div>
     </footer>
