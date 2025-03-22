@@ -143,8 +143,8 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h3 className="text-lg font-semibold text-white">Legal</h3>
-            <ul className="mt-4 space-y-2 text-sm">
+            <h3 className="text-xl font-bold text-white mb-6">Legal</h3>
+            <ul className="space-y-4 text-base">
               <li>
                 <Link href="/coming-soon" className="text-white/90 hover:text-yellow-400 transition-colors duration-200 inline-block transform hover:translate-x-1">
                   Privacy

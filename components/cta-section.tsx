@@ -15,7 +15,7 @@ export function CtaSection() {
             <Button className="h-12 px-8 bg-white text-[#191919] hover:bg-gray-100">Get Started</Button>
             <Button
               variant="outline"
-              className="h-12 px-8 border-yellow-400 text-yellow-400 hover:bg-yellow-500/10 hover:text-yellow-300"
+              className="h-12 px-8 bg-yellow-500 text-white hover:bg-yellow-600 border-none"
             >
               Discover Opportunities
             </Button>
