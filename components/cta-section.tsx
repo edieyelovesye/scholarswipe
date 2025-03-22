@@ -12,13 +12,17 @@ export function CtaSection() {
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-3 mt-6">
-            <Button className="h-12 px-8 bg-white text-[#191919] hover:bg-gray-100">Get Started</Button>
-            <Button
-              variant="outline"
-              className="h-12 px-8 bg-yellow-500 text-white hover:bg-yellow-600 border-none"
-            >
-              Discover Opportunities
-            </Button>
+            <Link href="/coming-soon">
+              <Button className="h-12 px-8 bg-white text-[#191919] hover:bg-gray-100">Get Started</Button>
+            </Link>
+            <Link href="/coming-soon">
+              <Button
+                variant="outline"
+                className="h-12 px-8 bg-yellow-500 text-white hover:bg-yellow-600 border-none"
+              >
+                Discover Opportunities
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

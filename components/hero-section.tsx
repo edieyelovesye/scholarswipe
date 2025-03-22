@@ -24,10 +24,14 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex flex-col gap-4 sm:flex-row sm:gap-3">
-            <Button className="h-12 px-8">Find →</Button>
-            <Button variant="outline" className="h-12 px-8 bg-yellow-500 text-white hover:bg-yellow-600 border-none">
-              Learn More
-            </Button>
+            <Link href="/coming-soon">
+              <Button className="h-12 px-8">Find →</Button>
+            </Link>
+            <Link href="/coming-soon">
+              <Button variant="outline" className="h-12 px-8 bg-yellow-500 text-white hover:bg-yellow-600 border-none">
+                Learn More
+              </Button>
+            </Link>
           </div>
 
           {/* <div className="relative mt-10 w-full max-w-5xl overflow-hidden rounded-lg shadow-xl">
